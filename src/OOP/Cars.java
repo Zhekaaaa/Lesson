@@ -1,6 +1,6 @@
 package OOP;
 
-public class Cars implements Info {
+public abstract class Cars implements Info {
     String name;
     int speed;
 

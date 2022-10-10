@@ -2,9 +2,6 @@ package OOP;
 
 public class Test{
     public static void main(String[] args) {
-        Cars cars= new Cars("BMW",100);
-        cars.showInfo();
-        System.out.println();
         Cart cart = new Cart("Mersedes",180,1);
         cart.showInfo();
         cart.idInfo();
@@ -14,6 +11,11 @@ public class Test{
         electromobil.showInfo();
         electromobil.zaradInfo();
         electromobil.idInfo();
+        System.out.println();
+        Samosval samosval = new Samosval("Maz",60,3,2500);
+        samosval.showInfo();
+        samosval.idInfo();
+        samosval.vesInfo();
     }
 
 }
