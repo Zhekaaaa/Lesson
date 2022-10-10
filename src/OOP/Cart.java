@@ -1,6 +1,6 @@
 package OOP;
 
-public class Cart extends Cars{
+public class Cart extends Cars implements Info{
     int id;
    Cart(){
 
@@ -9,6 +9,12 @@ public class Cart extends Cars{
         super(name,speed);
         this.id=id;
     }
+
+    @Override
+    public void showInfo() {
+        System.out.println("Имя машины:"+name+" "+"Скорость машины:"+speed);
+    }
+
     void idInfo(){
         System.out.println("Номер машины:"+id);
     }

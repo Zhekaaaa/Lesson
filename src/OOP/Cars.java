@@ -1,6 +1,6 @@
 package OOP;
 
-public class Cars {
+public class Cars implements Info {
     String name;
     int speed;
 
@@ -11,10 +11,9 @@ public class Cars {
        this.name=name;
        this.speed=speed;
    }
-  public void showInfo(){
-       System.out.println("Имя машины:"+name);
-   }
-   public void speedInfo(){
-       System.out.println("Скорость машины:"+speed);
-   }
+
+    @Override
+    public void showInfo() {
+        System.out.println("Имя машины:"+name+" "+"Скорость машины:"+speed);
+    }
 }
