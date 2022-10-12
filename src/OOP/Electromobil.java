@@ -4,8 +4,8 @@ public class Electromobil extends Cart implements Info{
     private int zarad;
    Electromobil(){
    }
-    Electromobil(String name,int speed,int id){
-        super(name,speed,id);
+    Electromobil(String name,int speed,int id,String s){
+        super(name,speed,id,s);
 
     }
     public void setZarad(int userZarad){
